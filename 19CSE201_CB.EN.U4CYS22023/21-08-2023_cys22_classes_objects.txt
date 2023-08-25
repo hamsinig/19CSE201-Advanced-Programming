@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+class cys22{
+    
+    int rollno;
+    string name;
+    float cgpa;
+    public:
+    void addDetails(int r, string n, float cg){
+        rollno=r;
+        name=n;
+        cgpa=cg;
+    }
+    
+    void Display(){
+        cout<<rollno<<name<<cgpa;
+    }
+    
+    
+};
+int main() {
+cys22 c=cys22();
+c.addDetails(44,"Ram",4.8);
+c.Display();
+
+    return 0;
+}

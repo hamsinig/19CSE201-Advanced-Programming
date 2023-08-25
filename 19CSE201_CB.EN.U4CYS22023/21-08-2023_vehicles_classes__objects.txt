@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+class vehicle{
+    string colour;
+    int price;
+    public:
+    string company;
+    int year;
+    string model;
+    void getDetails(string c, int p, string co, int y,string m){
+        colour=c;
+        price=p;
+        company=co;
+        year=y;
+        model=m;
+    }
+    void Display(){
+        cout<<colour<<" "<<price<<" "<<company<<" "<<year<<" "<<model;
+    }
+};
+int main(){
+    vehicle v=vehicle();
+    v.getDetails("yellow",2300000,"maruti",2010,"SUV");
+    v.Display();
+}
