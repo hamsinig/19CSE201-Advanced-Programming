@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+class BankAccount{
+    int accno;
+    float balance;
+    string actype="SB";
+    
+   public:
+  BankAccount(int acno){
+     accno=acno;
+     balance=500.0;
+     actype="SB";
+ }
+   BankAccount(int acno, float bal, string at){
+      accno=acno;
+      balance=bal;
+      actype=at;
+  }  
+   BankAccount(int acno, float bal){
+      accno=acno;
+      balance=bal;
+      actype="SB";
+  }
+};
+int main(){
+    
+    BankAccount ba (89142);
+    BankAccount ca(89143,8000.0);
+    BankAccount da(89144,8000.0,"CA");
+    return 0;
+}
